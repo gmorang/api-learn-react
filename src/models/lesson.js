@@ -15,6 +15,10 @@ const LessonSchema = new moongose.Schema({
   image: {
     type: String,
     required: true
+  },
+  recomended: {
+    type: Array,
+    required: true
   }
 });
 
