@@ -31,7 +31,7 @@ router.route("/").get(async (req, res, next) => {
 });
 
 router.route("/by-title").get(async (req, res, next) => {
-  const props = req.body;
+  const props = req.query;
 
   const title = props.title;
 
