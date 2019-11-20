@@ -36,7 +36,7 @@ router.route("/by-title").get(async (req, res, next) => {
   const title = props.title;
 
   try {
-    const lesson = await Lesson.findOne({ title: title });
+    const lesson = await Lesson.findOne({ title });
 
     return res.json(lesson);
   } catch (err) {
